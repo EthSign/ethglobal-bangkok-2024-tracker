@@ -1,0 +1,60 @@
+name: "🐛 Bug Report"
+description: Create a new ticket for a bug.
+title: "🐛 [BUG] - <title>"
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: Please enter a brief description of your issue
+      placeholder:
+    validations:
+      required: true
+  - type: input
+    id: codebase-url
+    attributes:
+      label: "Codebase URL"
+      description: Please enter your GitHub URL to provide a reproduction of the issue
+      placeholder: https://github.com/USERNAME/REPO-NAME
+    validations:
+      required: true
+  - type: input
+    id: reprod-url
+    attributes:
+      label: "Tenderly Simulation/Trace URL"
+      description: If this is a smart contract issue, enter your Tenderly URL to provide a reproduction of the issue
+      placeholder: https://dashboard.tenderly.co/tx/mainnet/0xd00e0540ea7d4e3dbc9f3cf0d572698321a48e2fed95ca436517c4bc62d80689
+    validations:
+      required: false
+  - type: textarea
+    id: reprod
+    attributes:
+      label: "Reproduction steps"
+      description: Please enter an explicit description of your issue
+      value: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+      render: bash
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: "Screenshots"
+      description: If applicable, add screenshots to help explain your problem.
+      value: |
+        ![DESCRIPTION](LINK.png)
+      render: bash
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Logs"
+      description: Please copy and paste any relevant log or error output.
+      render: bash
+    validations:
+      required: false
