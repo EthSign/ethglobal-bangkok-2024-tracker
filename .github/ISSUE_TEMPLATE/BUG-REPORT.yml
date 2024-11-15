@@ -1,6 +1,6 @@
-name: "🐛 Bug Report"
-description: Create a new ticket for a bug.
-title: "🐛 [BUG] - <title>"
+name: "Bug Report"
+description: Create a new ticket for a bug that you found or when things just don't work.
+title: "[BUG] - <title>"
 labels: ["bug"]
 body:
   - type: textarea
@@ -15,7 +15,7 @@ body:
     id: codebase-url
     attributes:
       label: "Codebase URL"
-      description: Please enter your GitHub URL to provide a reproduction of the issue
+      description: Please enter your GitHub URL that shows your codebase
       placeholder: https://github.com/USERNAME/REPO-NAME
     validations:
       required: true

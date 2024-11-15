@@ -1,0 +1,23 @@
+name: "General Question"
+description: If it's not too technical, feel free to ask your questions here.
+title: "[GENERAL] - <title>"
+labels: ["general"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: Please enter your question.
+      placeholder:
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: "Screenshots"
+      description: If applicable, add screenshots to help explain your question.
+      value: |
+        ![DESCRIPTION](LINK.png)
+      render: bash
+    validations:
+      required: false
